@@ -27,7 +27,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
-	direction: rtl;
+	direction: ltr;
+    text-align: start;
 
 }
 
@@ -766,7 +767,7 @@ footer[role="contentinfo"] a:hover {
 .mu_register p {
 	margin: 20px 0;
 	line-height: 1.7;
-	text-align: end;
+	/* text-align: end; */
 
 }
 .entry-content blockquote p {
