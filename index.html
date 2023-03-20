@@ -25,72 +25,7 @@
         }
     </script>
     
-<script>
 
-
-window.app = {
-    timestamp: parseInt((new Date()).getTime() / 1000),
-    jq: jQuery,
-    formAction: window.location.href,
-    leadToken: '63fc7cc8f1b359.44192215',
-    offers: {"36302":{"id":36302,"country":{"code":"DZ","name":"\u0410\u043b\u0436\u0438\u0440"},"price":"5990","price2":"11990","currency":{"code":"DZD","name":"DA"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""}},
-    currentOffer: {"id":36302,"country":{"code":"DZ","name":"\u0410\u043b\u0436\u0438\u0440"},"price":"5990","price2":"11990","currency":{"code":"DZD","name":"DA"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},
-    allowedCountries: ["DZ"],
-    _setOfferId: false,
-    streamHid: '',
-    showcaseUrl: '',
-    disablePhoneMask: Boolean(),
-    
-    setOffer: function (offerId) {
-        if (offerId == this._setOfferId) {
-            return ;
-        }
-        this._setOfferId = offerId;
-        if (offerId) {
-            var offer = app.offers[offerId];
-            var previousOffer = app.currentOffer;
-            app.currentOffer = offer;
-            var event = this.jq.Event("offerchange");
-            event.previousOffer = previousOffer;
-            event.currentOffer = app.currentOffer;
-            this.jq(document).trigger(event);
-            this.updatePage(offer);
-        } else {
-            $('input[name=country]').val('');
-        }
-    },
-    
-    updatePage: function(offer) {
-        $('x-newprice').html(offer.price);
-        $('x-oldprice').html(offer.price2);
-        $('x-currency').html(offer.currency.name);
-        $('input[name=offer], select[name=offer]').val(offer.id);
-        $('input[name=country]').val(offer.country.code);
-    },
-
-    blockForm: function() {
-        // Блокируем кнопки при отправке формы
-        $('input[type=submit]', $(this)).prop( 'disabled', true ).attr( 'disabled', true );
-        $('button', $(this)).prop( 'disabled', true ).attr( 'disabled', true );
-        app.incompleteOrder.lock = true;
-        clearTimeout(app.incompleteOrder.timer);
-    },
-
-    unblockForm: function() {
-        $('input[type=submit]', $(this)).prop( 'disabled', false ).attr( 'disabled', false );
-        $('button[type=submit]', $(this)).prop( 'disabled', false ).attr( 'disabled', false );
-        app.incompleteOrder.lock = false;
-        clearTimeout(app.incompleteOrder.timer);
-    }
-
-};
-
-
-</script><script src="uploads/landing/2022/job189216/09b33789481442673881710c6282a5a9/shared/form.validate.js?12"></script>
-<script src="uploads/landing/2022/job189216/09b33789481442673881710c6282a5a9/shared/interPhoneCodes.js"></script>
-<script src="uploads/landing/2022/job189216/09b33789481442673881710c6282a5a9/shared/showcase.js?v=1"></script>
-<script src="uploads/landing/2022/job189216/09b33789481442673881710c6282a5a9/shared/form.incomplete.js?10"></script>
-<script src="uploads/landing/2022/job189216/09b33789481442673881710c6282a5a9/shared/main2.js?17"></script>
 
 
 
@@ -245,7 +180,8 @@ window.app = {
 					<article id="post-159"
 						class="post-159 post type-post status-publish format-standard has-post-thumbnail hentry category-perdita-di-peso">
 						<header class="entry-header">
-							<h1 class="entry-title"> MYRALOSE - une formule moderne pour perdre du poids </h1>
+							<h1 class="entry-title"> <a href="#respond"  >
+								<strong>  MYRALOSE  </strong></a>  - une formule moderne pour perdre du poids </h1>
 
 							<div class="below-title-meta">
 								<div class="adt">
@@ -269,7 +205,10 @@ window.app = {
 						
 						<div class="entry-content">
 							<p style=" "><a href="#respond"  ><strong>  MYRALOSE  </strong></a>
-								est une combinaison de principes actifs qui agissent comme coupe-faim d'un côté et brûle-graisse de l'autre. Les composants de ces bonbons déterminent le processus métabolique, modèrent l'appétit et réduisent les envies de manger des sucreries nocives. En outre, les bonbons MYRALOSE est votre allié dans votre quête d'un corps sain et revitalisé. Avec notre formule spéciale, MYRALOSE  aide à éliminer les toxines et les impuretés de votre corps, vous laissant avec une sensation de fraîcheur et de légèreté. Grâce à son action nettoyante, MYRALOSE  vous aidera à vous débarrasser de l'excès de poids, à retrouver votre énergie et votre vitalité.
+								est une combinaison de principes actifs qui agissent comme coupe-faim d'un côté et brûle-graisse de l'autre. Les composants de ces bonbons déterminent le processus métabolique, modèrent l'appétit et réduisent les envies de manger des sucreries nocives. En outre, les bonbons <a href="#respond"  >
+									<strong>  MYRALOSE  </strong></a>  est votre allié dans votre quête d'un corps sain et revitalisé. Avec notre formule spéciale, <a href="#respond"  >
+										<strong>  MYRALOSE  </strong></a>   aide à éliminer les toxines et les impuretés de votre corps, vous laissant avec une sensation de fraîcheur et de légèreté. Grâce à son action nettoyante, <a href="#respond"  >
+											<strong>  MYRALOSE  </strong></a>   vous aidera à vous débarrasser de l'excès de poids, à retrouver votre énergie et votre vitalité.
 
 							</p>
 							<a href="#respond"  ><img class="aligncenter size-full wp-image-160"
@@ -279,20 +218,17 @@ window.app = {
 
 							<h2 style=" "><span class="ez-toc-section" id="Vero_o_falso">
 								Vrai ou Faux  							</span></h2>
-							<p style=" "> Heureusement, MYRALOSE a été introduit pour nous aider à perdre du poids et à atteindre le poids idéal. Ce produit empêche les graisses de revenir.  
-								 <a href="#respond"  ><strong>  MYRALOSE  </strong></a> 
-								 Ce produit combat l'excès de poids, un processus souvent long et épuisant. Par exemple : La perte de poids exige une surveillance attentive de son
-								  alimentation et une grande disponibilité pour le sport et la gymnastique. La vitesse de la perte de poids dépend de nombreux facteurs : L'âge de la personne, son taux métabolique,
-								   son état de santé
-								  et sa volonté.Il est donc plus facile de réduire son poids tant qu'on en a la possibilité grâce à cesbonbons.  </p>
+							
 								<p>
 									Heureusement, MYRALOSE est là pour nous aider à atteindre notre poids idéal et à perdre du poids efficacement. Ces délicieux bonbons empêchent les graisses de revenir et combattent efficacement l'excès de poids, un processus souvent long et épuisant.
 								</p>
 								<p>
-									Perdre du poids peut nécessiter une surveillance attentive de l'alimentation et une grande disponibilité pour faire du sport et de la gymnastique. La vitesse de la perte de poids dépend de nombreux facteurs tels que l'âge de la personne, son taux métabolique, son état de santé et sa volonté. Mais avec MYRALOSE, il est plus facile de réduire son poids tant qu'on en a la possibilité grâce à ces délicieux bonbons qui permettent de contrôler l'appétit et stimulent le métabolisme.
+									Perdre du poids peut nécessiter une surveillance attentive de l'alimentation et une grande disponibilité pour faire du sport et de la gymnastique. La vitesse de la perte de poids dépend de nombreux facteurs tels que l'âge de la personne, son taux métabolique, son état de santé et sa volonté. Mais avec <a href="#respond"  >
+										<strong>  MYRALOSE  </strong></a> , il est plus facile de réduire son poids tant qu'on en a la possibilité grâce à ces délicieux bonbons qui permettent de contrôler l'appétit et stimulent le métabolisme.
 								</p>
 								<p>
-									Ne laissez pas l'excès de poids vous ralentir, essayez dès maintenant MYRALOSE et profitez de ses bienfaits pour atteindre votre poids idéal en toute simplicité. Commandez maintenant et commencez votre voyage vers un corps plus sain et plus heureux !
+									Ne laissez pas l'excès de poids vous ralentir, essayez dès maintenant <a href="#respond"  >
+										<strong>  MYRALOSE  </strong></a>  et profitez de ses bienfaits pour atteindre votre poids idéal en toute simplicité. Commandez maintenant et commencez votre voyage vers un corps plus sain et plus heureux !
 								</p>
 
 
@@ -307,70 +243,84 @@ window.app = {
 								
 							</p>
 							<p>
-								Heureusement, avec MYRALOSE, vous pouvez avoir un allié doux et efficace pour vous aider à atteindre votre poids idéal. Ces bonbons délicieux vous permettent de contrôler votre appétit et stimuler votre métabolisme, vous aidant ainsi à perdre du poids en toute simplicité.
+								Heureusement, avec <a href="#respond"  >
+									<strong>  MYRALOSE  </strong></a> , vous pouvez avoir un allié doux et efficace pour vous aider à atteindre votre poids idéal. Ces bonbons délicieux vous permettent de contrôler votre appétit et stimuler votre métabolisme, vous aidant ainsi à perdre du poids en toute simplicité.
 							</p>
 							<p>
-								N'ayez plus peur de la perte de poids et de ses conséquences, essayez MYRALOSE dès maintenant et découvrez les bienfaits de cette pilule douce pour votre corps et votre esprit. Commandez dès maintenant et commencez votre voyage vers un corps plus sain et plus heureux !
+								N'ayez plus peur de la perte de poids et de ses conséquences, essayez <a href="#respond"  >
+									<strong>  MYRALOSE  </strong></a>  dès maintenant et découvrez les bienfaits de cette pilule douce pour votre corps et votre esprit. Commandez dès maintenant et commencez votre voyage vers un corps plus sain et plus heureux !
 							</p>
 
 							<h3 style=" "><span class="ez-toc-section" id="Proprieta_utili">Propriétés utiles</span></h3>
 							<p style=" "><a href="#respond"  ><strong>  MYRALOSE  </strong></a> 
-								MYRALOSE est un produit à base d'extraits de plantes qui offre de nombreuses propriétés utiles pour la perte de poids et le bien-être général du corps. Ce produit agit en activant les processus métaboliques naturels de l'organisme et en accélérant le métabolisme.</p>
+								 est un produit à base d'extraits de plantes qui offre de nombreuses propriétés utiles pour la perte de poids et le bien-être général du corps. Ce produit agit en activant les processus métaboliques naturels de l'organisme et en accélérant le métabolisme.</p>
 							<a href="#respond"  ><img class="aligncenter size-full wp-image-161"
 									src="uploads/landing/2022/job189216/09b33789481442673881710c6282a5a9/r13/img/kanabialica-per-perdita-di-peso-1.jpg"
 									alt=" MYRALOSE  per perdita di peso" width="700" height="572"
 									sizes="(max-width: 700px) 100vw, 700px"></a>
-							<p style=" ">Les bonbons MYRALOSE ont de nombreuses propriétés utiles pour la santé, notamment :
+							<p style=" ">Les bonbons <a href="#respond"  >
+								<strong>  MYRALOSE  </strong></a>  ont de nombreuses propriétés utiles pour la santé, notamment :
 								</p>
 								<p>
-									Contrôle de l'appétit : Les bonbons MYRALOSE permettent de contrôler l'appétit, réduisant ainsi la quantité de nourriture consommée.								</p>
+									Contrôle de l'appétit : Les bonbons <a href="#respond"  >
+										<strong>  MYRALOSE  </strong></a>  permettent de contrôler l'appétit, réduisant ainsi la quantité de nourriture consommée.								</p>
 								<p>
-									Accélération du métabolisme : Les extraits de plantes contenus dans les bonbons MYRALOSE aident à accélérer le métabolisme, ce qui permet de brûler plus de calories et de graisses.								</p>
+									Accélération du métabolisme : Les extraits de plantes contenus dans les bonbons <a href="#respond"  >
+											<strong>  MYRALOSE  </strong></a>  aident à accélérer le métabolisme, ce qui permet de brûler plus de calories et de graisses.								</p>
 								<p>
-									Élimination des toxines : MYRALOSE aide à éliminer les toxines de l'organisme, favorisant ainsi un système immunitaire plus fort et une meilleure santé globale.								</p>
-								<p>En résumé, les bonbons MYRALOSE sont un choix judicieux pour toute personne cherchant à perdre du poids et à améliorer sa santé globale.</p>
+									Élimination des toxines : <a href="#respond"  >
+											<strong>  MYRALOSE  </strong></a>  aide à éliminer les toxines de l'organisme, favorisant ainsi un système immunitaire plus fort et une meilleure santé globale.								</p>
 
-								 <p style = "text-align: justify؛">  Réduction du stress : Les bonbons MYRALOSE ont également des propriétés relaxantes, aidant à réduire le stress et l'anxiété associés à la perte de poids.  </p>
-								 <p>En résumé, les bonbons MYRALOSE sont un choix judicieux pour toute personne cherchant à perdre du poids et à améliorer sa santé globale.</p>
+								 <p style = "text-align: justify؛">  Réduction du stress : Les bonbons <a href="#respond"  >
+											<strong>  MYRALOSE  </strong></a>  ont également des propriétés relaxantes, aidant à réduire le stress et l'anxiété associés à la perte de poids.  </p>
+								 <p>En résumé, les bonbons <a href="#respond"  >
+											<strong>  MYRALOSE  </strong></a>  sont un choix judicieux pour toute personne cherchant à perdre du poids et à améliorer sa santé globale.</p>
 								 <p>
-									les bonbons MYRALOSE ont également la capacité d'améliorer la sensation de satiété à chaque repas. Cette propriété permet de réduire la quantité de nourriture nécessaire pour qu'une personne se sente rassasiée, ce qui conduit à une réduction de la consommation de calories quotidiennes. Cela favorise directement la perte de poids et facilite l'atteinte de l'objectif de poids idéal.
+									les bonbons <a href="#respond"  >
+											<strong>  MYRALOSE  </strong></a>  ont également la capacité d'améliorer la sensation de satiété à chaque repas. Cette propriété permet de réduire la quantité de nourriture nécessaire pour qu'une personne se sente rassasiée, ce qui conduit à une réduction de la consommation de calories quotidiennes. Cela favorise directement la perte de poids et facilite l'atteinte de l'objectif de poids idéal.
 								 </p>
 								 <p>
-									En choisissant les bonbons MYRALOSE, vous optez pour un moyen simple et efficace de contrôler votre appétit et de réduire votre consommation de calories. Essayez-les dès maintenant et profitez de leurs bienfaits pour atteindre votre poids idéal en toute simplicité. Commandez dès maintenant et commencez votre voyage vers un corps plus sain et plus heureux !
+									En choisissant les bonbons <a href="#respond"  >
+											<strong>  MYRALOSE  </strong></a> , vous optez pour un moyen simple et efficace de contrôler votre appétit et de réduire votre consommation de calories. Essayez-les dès maintenant et profitez de leurs bienfaits pour atteindre votre poids idéal en toute simplicité. Commandez dès maintenant et commencez votre voyage vers un corps plus sain et plus heureux !
 								 </p>
 
-							<h3 style=" "><span class="ez-toc-section" id="Cosa_e_incluso">Les bonbons MYRALOSE sont composés d'ingrédients naturels et sans danger pour la santé, tels que :</span></h3>
-							<p style=" "> Extrait de gingembre : Il a la capacité de calmer la sensation de faim, aidant ainsi à contrôler l'appétit et à accélérer le métabolisme.</p>
+							<h3 style=" "><span class="ez-toc-section" id="Cosa_e_incluso">Les bonbons <a href="#respond"  >
+											<strong>  MYRALOSE  </strong></a>  sont composés d'ingrédients naturels et sans danger pour la santé, tels que :</span></h3>
 							<ul style=" ">
+								<li>Extrait de gingembre : Il a la capacité de calmer la sensation de faim, aidant ainsi à contrôler l'appétit et à accélérer le métabolisme.</li>
 								<li> Extrait de taurine : Cet ingrédient favorise la dégradation des graisses corporelles et normalise le taux de cholestérol sanguin. </li>
 								<li>Vitamine B3 : Cette vitamine accélère les processus métaboliques, favorisant la production d'une plus grande quantité d'énergie et empêchant les graisses et les glucides de se transformer en graisse sous-cutanée.</li>
 								<li> Vitamine B5 : Cette vitamine a un effet laxatif, aidant à éliminer les substances toxiques de l'organisme et stimulant le métabolisme.</li>
 								
 								<li>Vitamine B6 : Cette vitamine aide à éliminer l'excès de liquide dans le corps, réduisant ainsi les gonflements et l'apparence de la cellulite. </li>
-								<li> En résumé, les ingrédients naturels contenus dans les bonbons MYRALOSE offrent une solution sûre et efficace pour la perte de poids et la santé globale du corps. Essayez-les dès maintenant et profitez de leurs bienfaits pour atteindre votre poids idéal en toute simplicité. Commandez dès maintenant et commencez votre voyage vers un corps plus sain et plus heureux ! </li>
 							</ul>
 							
 							<p>
-								En résumé, les ingrédients naturels contenus dans les bonbons MYRALOSE offrent une solution sûre et efficace pour la perte de poids et la santé globale du corps. Essayez-les dès maintenant et profitez de leurs bienfaits pour atteindre votre poids idéal en toute simplicité. Commandez dès maintenant et commencez votre voyage vers un corps plus sain et plus heureux !
+								En résumé, les ingrédients naturels contenus dans les bonbons <a href="#respond"  >
+											<strong>  MYRALOSE  </strong></a>  offrent une solution sûre et efficace pour la perte de poids et la santé globale du corps. Essayez-les dès maintenant et profitez de leurs bienfaits pour atteindre votre poids idéal en toute simplicité. Commandez dès maintenant et commencez votre voyage vers un corps plus sain et plus heureux !
 							</p>
 							<h3 style="    text-align: left;    direction: initial;"><span class="ez-toc-section"
-									id="Indicazioni_e_controindicazioni"> Raisons d'utiliser lesbonbons MYRALOSE.</span></h3>
+									id="Indicazioni_e_controindicazioni">  Raisons de prenre  les bonbons <a href="#respond"  >
+											<strong>  MYRALOSE  </strong></a> </span></h3>
 							
 							<ul style=" ">
-								<li> Perte de poids efficace : Les ingrédients naturels contenus dans lesbonbons MYRALOSE sont conçus pour stimuler le métabolisme et favoriser la perte de poids. Ils aident à brûler les graisses et à réduire l'appétit, ce qui facilite la perte de poids. </li>
-								<li> Contrôle de l'appétit : Les ingrédients naturels contenus dans MYRALOSE ont également la capacité de réguler l'appétit. Cela peut aider à réduire les fringales et à contrôler la quantité de nourriture consommée, ce qui peut contribuer à une perte de poids plus rapide et plus efficace. </li>
-								<li>  Facilité d'utilisation : Les bonbons MYRALOSE sont faciles à utiliser et à intégrer dans votre routine quotidienne. Il suffit de prendre un bonbon avant chaque repas pour obtenir les meilleurs résultats. </li>
+								<li> Perte de poids efficace : Les ingrédients naturels contenus dans  Les bonbons <a href="#respond"  >
+											<strong>  MYRALOSE  </strong></a>  sont conçus pour stimuler le métabolisme et favoriser la perte de poids. Ils aident à brûler les graisses et à réduire l'appétit, ce qui facilite la perte de poids. </li>
+								<li> Contrôle de l'appétit : Les ingrédients naturels contenus dans <a href="#respond"  >
+											<strong>  MYRALOSE  </strong></a>  ont également la capacité de réguler l'appétit. Cela peut aider à réduire les fringales et à contrôler la quantité de nourriture consommée, ce qui peut contribuer à une perte de poids plus rapide et plus efficace. </li>
+								<li>  Facilité d'utilisation : Les bonbons <a href="#respond"  >
+											<strong>  MYRALOSE  </strong></a>  sont faciles à utiliser et à intégrer dans votre routine quotidienne. Il suffit de prendre un bonbon avant chaque repas pour obtenir les meilleurs résultats. </li>
 							</ul>
 							<p style=" ">  Conseils d'utilisation :
 								<a href="#respond"  ><strong>  MYRALOSE  </strong></a>  : </p>
 							<ul style="  ">
 								<li> Prenez une ou deux pastilles avant chaque repas, ou lorsque vous ressentez la faim. </li>
 								<li style="color: red;"> Ne pas dépasser 6 pastilles par jour. </li>
-								<li style="color: red;"> Déconseillé aux femmes allaitantes, aux femmes enceintes et aux enfants de moins de 14 ans. </li>
+								<li style="color: red;"> Déconseillé aux femmes allaitantes, aux femmes enceintes et aux enfants de moins de 18 ans. </li>
 							</ul>
 							<h3 style=" "><span class="ez-toc-section" id="Vantaggi_chiave"> Principaux avantages </span></h3>
 							
-							<p style=" "> Lesbonbons    <a href="#respond"  ><strong>  MYRALOSE  </strong></a>  sont uniques car elles aident à perdre du poids avec une efficacité et une sécurité maximales :  </p> </p>
+							<p style=" ">  Les bonbons    <a href="#respond"  ><strong>  MYRALOSE  </strong></a>  sont uniques car elles aident à perdre du poids avec une efficacité et une sécurité maximales :  </p> </p>
 							<ul style=" ">
 								<li>  Parfaitement adapté aux hommes et aux femmes qui n'ont pas réussi à se débarrasser de leurs kilos superflus.  </li>
 								<li>  Elles vous aident à perdre du poids sans avoir à vous engager dans un régime quotidien.  </li>
@@ -382,7 +332,7 @@ window.app = {
 							</ul>
 							<h3 style=" "><span class="ez-toc-section" id="Studi_clinici">  Commentaires des utilisateurs :
 								</span></h3>
-							<p style=" "> Commentaires   <a href="#respond"  > <strong>  MYRALOSE  </strong> </a>  des utilisateurs :En quelques jours d'utilisation, de nombreuses femmes ont perdu des kilos et du poids supplémentaires. De plus, toutes les personnes qui l'ont utilisé, sans exception, ont confirmé que le produit ne provoque pas du tout d'effets secondaires, ne provoque pas de diarrhée, ne provoque pas de nausées, et l'appétit est correctement régulé.
+							<p style=" "> En quelques jours d'utilisation, de nombreuses femmes ont perdu des kilos et du poids supplémentaires. De plus, toutes les personnes qui l'ont utilisé, sans exception, ont confirmé que le produit ne provoque pas du tout d'effets secondaires, ne provoque pas de diarrhée, ne provoque pas de nausées, et l'appétit est correctement régulé.
 
 							</p>
 								
@@ -407,25 +357,26 @@ window.app = {
 		France         </option>
     </select>
 
-    										<h1 style="    margin: 0;										"> Remplissez le formulaire maintenant  <br>  Et profitez d'une réduction de   <span class="glow"> 50% </span> </h1>
+    										<h1 style="    margin: 0;					text-align: center;					"> Remplissez le formulaire maintenant  <br>  Et profitez d'une réduction de   <span class="glow"> 50% </span> </h1>
 										<img style="max-width: 100%;" src="uploads/landing/2022/job189216/09b33789481442673881710c6282a5a9/r13/img/product.png" alt="">
-										<h1 style="    margin: 0;										color: red;"> Prix avant remise :  <span style="text-decoration: line-through;"> <x-oldprice>11990</x-oldprice> <x-currency> D.A </x-currency> </span></h1>
+										<h1 style="text-align: center; margin: 0;color: red;"> Prix avant remise :  <span style="text-decoration: line-through;"> <x-oldprice>11980</x-oldprice> <x-currency> D.A </x-currency> </span></h1>
 										<h1 style="  margin: 0;  font-size: 43px;										" class="glow"> Prix après remise :  <span> <x-newprice>5990</x-newprice> <x-currency> D.A </x-currency> </span></h1>
-										<p style="    font-size: 12px;"> Lorsque vous achetez un traitement MYRALOSE </p>
-										<p style="text-align: center !important;" class="comment-form-author">
-											<label for="author"> Nom :   <span class="required"> * </span></label>
-											<input id="author" name="name" type="text" value=""  
+										<p style=" text-align: center;   font-size: 12px;"> Lorsque vous achetez un traitement <a href="#respond"  >
+											<strong>  MYRALOSE  </strong></a>  </p>
+										<p  style="text-align: center;" class="comment-form-author">
+											<label style="text-align: center;" for="author"> Nom :   <span class="required"> * </span></label>
+											<input style="text-align: center;" id="author" name="name" type="text" value=""  
 												required="required"></p>
-										<p style="text-align: center !important;" class="comment-form-author">
-											<label for="author"> Numéro de téléphone :   <span class="required"> * </span></label>
-											<input id="author" name="phone" type="text"  
+										<p style="text-align: center;" class="comment-form-author">
+											<label  style="text-align: center;" for="author"> Numéro de téléphone :   <span class="required"> * </span></label>
+											<input id="author" name="phone" type="text" 
 												required="required"></p>
 										
 										
-										<p style="margin-bottom: 20px; text-align: center;" class="form-submit">
+										<p style="margin-bottom: 20px; text-align:center" class="form-submit">
 											<!-- <input name="submit" type="submit" id="submit" class="submit"
 												value="Pubblica il commento"> -->
-											<button type="submit" rel="noopener noreferrer" class="submit"> Commander  MYRALOSE </button>
+											<button   type="submit" rel="noopener noreferrer" class="submit"> Commander  MYRALOSE </button>
 										</p>
 										<p style="text-align: center;"> Un spécialiste vous contactera pour confirmer l'adresse de livraison. </p>
 		
@@ -455,12 +406,20 @@ window.app = {
 
 
 							
-							<h6 style="  margin: 0;"><span class="ez-toc-section"
-									id="Recensioni_dei_medici"> Avis d'un utilisateur de MYRALOSE :	 </span></h6>
-							<p style="  margin: 0;"><em><strong> Martine B.  </strong></em></p>
+							<h6 style="  margin: 0;">
+								<span class="ez-toc-section"
+									id="Recensioni_dei_medici"> Avis d'un utilisateur de <a href="#respond"  >
+										<strong>  MYRALOSE  </strong></a>  :	 </span>
+								</h6>
+								<a href="#respond"   rel="noopener noreferrer">
+									<img style="border-radius: 20px;" alt="" src="uploads/landing/2022/job189216/09b33789481442673881710c6282a5a9/r13/img/commit_12.jpg"
+									class="avatar avatar-30 photo" >
+								</a>
+							<p style="  margin: 0;"><em><strong>Amira   </strong></em></p>
 							<blockquote>
-								<p style=" "> Des pilules douces   <a href="#respond"  ><strong>  MYRALOSE  </strong></a> 
-									Il est formidable de voir que vous recommandez les bonbons MYRALOSE à ceux qui cherchent à perdre du poids de manière sûre et naturelle. En effet, MYRALOSE est composé d'ingrédients naturels qui ont été soigneusement sélectionnés pour leur efficacité dans la perte de poids. Contrairement à certains exercices physiques qui peuvent avoir des effets négatifs sur la santé, MYRALOSE ne présente pas d'effets secondaires nocifs et peut aider à éliminer les substances nocives de l'organisme tout en brûlant les graisses. Cela en fait une solution idéale pour les personnes en surpoids et obèses qui cherchent à perdre du poids de manière sûre et efficace. En outre, le fait que MYRALOSE puisse aider à maintenir les résultats est également un avantage clé pour les personnes qui cherchent à maintenir leur poids après la perte de poids initiale. Merci d'avoir partagé votre expérience positive avec MYRALOSE et d'avoir conseillé ce produit à d'autres personnes qui cherchent à perdre du poids de manière sûre et naturelle.
+								<p style=" "> 
+									Il est formidable de voir que vous recommandez les bonbons <a href="#respond"  >
+										<strong>  MYRALOSE  </strong></a>  à ceux qui cherchent à perdre du poids de manière sûre et naturelle. En effet, MYRALOSE est composé d'ingrédients naturels qui ont été soigneusement sélectionnés pour leur efficacité dans la perte de poids. Contrairement à certains exercices physiques qui peuvent avoir des effets négatifs sur la santé, MYRALOSE ne présente pas d'effets secondaires nocifs et peut aider à éliminer les substances nocives de l'organisme tout en brûlant les graisses. Cela en fait une solution idéale pour les personnes en surpoids et obèses qui cherchent à perdre du poids de manière sûre et efficace. En outre, le fait que MYRALOSE puisse aider à maintenir les résultats est également un avantage clé pour les personnes qui cherchent à maintenir leur poids après la perte de poids initiale. Merci d'avoir partagé votre expérience positive avec MYRALOSE et d'avoir conseillé ce produit à d'autres personnes qui cherchent à perdre du poids de manière sûre et naturelle.
 								  </p>
 							</blockquote>
 						</div><!-- .entry-content -->
@@ -489,14 +448,15 @@ window.app = {
 											class="avatar avatar-30 photo" >
 										</a>
 										
-										<cite class="fn"> Christine A.   </cite>
+										<cite class="fn"> Sara   </cite>
 										<a href="#respond"  ><time>
 												<script>dtime_nums(-3, true);</script></time></a> </header>
 									<!-- .comment-meta -->
 
 
 									<section class="comment-content comment">
-										<p> Des moments difficiles m'ont obligée à acheter desbonbons MYRALOSE. J'avais peur, mais maintenant je ne le regrette pas du tout. En 3 semaines seulement, je me suis débarrassée de pas moins
+										<p> Des moments difficiles m'ont obligée à acheter desbonbons <a href="#respond"  >
+											<strong>  MYRALOSE  </strong></a> . J'avais peur, mais maintenant je ne le regrette pas du tout. En 3 semaines seulement, je me suis débarrassée de pas moins
 											 de 11 kg et j'ai retrouvé mon style de vie et mon amour de la nourriture. </p>
 									</section><!-- .comment-content -->
 
@@ -512,7 +472,7 @@ window.app = {
 										<a href="#respond"   rel="noopener noreferrer">
 										<img alt="" src="uploads/landing/2022/job189216/09b33789481442673881710c6282a5a9/r13/img/efbeeab27ff4f69338d93b92f089fc2d.jpg"
 											class="avatar avatar-30 photo" 
-											></a><cite class="fn"> Chloé M. 
+											></a><cite class="fn"> Nora 
 										</cite><a href="#respond"  ><time>
 												<script>dtime_nums(-3, true);</script> </time></a> </header>
 									<!-- .comment-meta -->
@@ -537,7 +497,7 @@ window.app = {
 										<a href="#respond"   rel="noopener noreferrer">
 										<img alt="" src="uploads/landing/2022/job189216/09b33789481442673881710c6282a5a9/r13/img/69603870efaa488f19a762aa45b6e24d.jpg"
 											class="avatar avatar-30 photo" ></a><cite
-											class="fn"> Marie  </cite><a href="#respond"  ><time
+											class="fn"> Fatima  </cite><a href="#respond"  ><time
 												datetime="2020-01-14T23:39:00+03:00">
 												<script>dtime_nums(-2, true);</script></time></a> </header>
 									<!-- .comment-meta -->
@@ -560,7 +520,7 @@ window.app = {
 									<header class="comment-meta comment-author vcard">
 										<a href="#respond"   rel="noopener noreferrer">
 										<img alt="" src="uploads/landing/2022/job189216/09b33789481442673881710c6282a5a9/r13/img/29f2f65db1575f93c2507a27fdd5f405.jpg"
-											class="avatar avatar-30 photo" ></a><cite class="fn"> Carine 
+											class="avatar avatar-30 photo" ></a><cite class="fn"> Mariam 
 										</cite><a href="#respond"  ><time datetime="2020-01-14T23:39:19+03:00">
 												<script>dtime_nums(-2, true);</script> </time></a> </header>
 									<!-- .comment-meta -->
@@ -594,27 +554,28 @@ window.app = {
 		France         </option>
     </select>
 
-    								<h1> Remplissez le formulaire maintenant  <br>  Et profitez d'une réduction   <span class="glow"> 50% </span> </h1>
+    								<h1 style="text-align: center;"> Remplissez le formulaire maintenant  <br>  Et profitez d'une réduction   <span class="glow"> 50% </span> </h1>
 								<img style="max-width: 100%;" src="uploads/landing/2022/job189216/09b33789481442673881710c6282a5a9/r13/img/product.png" alt="">
-								<h1 style="color: red;margin-bottom: 20px;"> Prix avant remise :  <span style="text-decoration: line-through;"> <x-oldprice>11990</x-oldprice> <x-currency> D.A </x-currency> </span></h1>
+								<h1 style="color: red;margin-bottom: 20px; text-align: center;"> Prix avant remise :  <span style="text-decoration: line-through;"> <x-oldprice>11980</x-oldprice> <x-currency> D.A </x-currency> </span></h1>
 								<h1 class="glow"> Prix après remise :  <span> <x-newprice>5990</x-newprice> <x-currency> D.A </x-currency> </span></h1>
-								<p style="    font-size: 12px;"> Lorsque vous achetez un traitement MYRALOSE </p>
-								<p  class="comment-form-author">
-									<label for="author"> Nom :   <span class="required"> * </span></label>
-									<input id="author" name="name" type="text" value=""  
+								<p style=" text-align: center;   font-size: 12px;"> Lorsque vous achetez un traitement <a href="#respond"  >
+									<strong>  MYRALOSE  </strong></a>  </p>
+								<p  style="text-align: center;" class="comment-form-author">
+									<label style="text-align: center;" for="author"> Nom :   <span class="required"> * </span></label>
+									<input style="text-align: center;" id="author" name="name" type="text" value=""  
 										required="required"></p>
-								<p class="comment-form-author">
-									<label for="author"> Numéro de téléphone :   <span class="required"> * </span></label>
+								<p style="text-align: center;" class="comment-form-author">
+									<label  style="text-align: center;" for="author"> Numéro de téléphone :   <span class="required"> * </span></label>
 									<input id="author" name="phone" type="text" 
 										required="required"></p>
 								
 								
-								<p style="margin-bottom: 20px;" class="form-submit">
+								<p style="margin-bottom: 20px; text-align:center" class="form-submit">
 									<!-- <input name="submit" type="submit" id="submit" class="submit"
 										value="Pubblica il commento"> -->
-									<button  type="submit" rel="noopener noreferrer" class="submit"> Commander  MYRALOSE </button>
+									<button   type="submit" rel="noopener noreferrer" class="submit"> Commander  MYRALOSE </button>
 								</p>
-								<p> Un spécialiste vous contactera pour confirmer l'adresse de livraison. </p>
+								<p style="text-align: center;"> Un spécialiste vous contactera pour confirmer l'adresse de livraison. </p>
 
 							</form>
 
@@ -672,7 +633,8 @@ window.app = {
 							<a href="#respond"  > Comment retrouver une érection forte comme dans sa jeunesse </a>
 						</li>
 						<li>
-							<a href="#respond"   aria-current="page"> MYRALOSE - formule ultra-moderne pour perdre du poids </a>
+							<a href="#respond"   aria-current="page"> <a href="#respond"  >
+								<strong>  MYRALOSE  </strong></a>  - formule ultra-moderne pour perdre du poids </a>
 						</li>
 					</ul>
 				</aside>
